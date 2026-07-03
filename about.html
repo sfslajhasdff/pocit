@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -187,7 +187,10 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-        <div class="autoplay-progress"></div>
+        <div class="autoplay-progress"><svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+    </svg>
+    <span></span></div>
     </div>
     </div>
     <p class="s5t1">GALLARY</p>
@@ -235,33 +238,43 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- Swiper JS -->
 
-    <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            on: {
-                autoplayTimeLeft(s, time, progress) {
-                    progressCircle.style.setProperty("--progress", 1 - progress);
-                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-                }
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+                if (!progressCircle || !progressContent) return;
+
+                progressCircle.style.setProperty("--progress", 1 - progress);
+                progressContent.textContent = `${Math.ceil(time / 1000)}s`;
             }
-        });
-    </script>
-    <!-- Initialize Swiper -->
+        }
+    });
+
+});
+</script>
 
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -271,235 +284,3 @@
     </script>
     
 </body>
-
-=======
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT</title>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="./css/about.css">
-</head>
-
-<body>
-    <div id="section1">
-        <div class="section111">
-            <div class="section1_1">
-                <div class="logomenu">
-                    <div class="logo"><a href="./index.html"><img src="./images/home/logob.png" alt="logo"></a></div>
-                    <div>
-                        <ul class="menu SMN_effect-30">
-                            <li><a href="./about.html">ABOUT</a></li>
-                            <li><a href="./culture.html">CULTURE</a></li>
-                            <li><a href="./exhibition.html">EXHIBITION</a></li>
-                            <li><a href="./shop.html">SHOP</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="blackbox"></div>
-            <div class="s1t1"><img src="./images/about/about POCIT.png" alt="A"></div>
-            <div class="s1t2"><img src="./images/about/POCIT는 사람과 문화, 공간을 잇는 라이프스타일 브랜드입니다..png" alt="a2"></div>
-            <div class="s1i1"><img src="./images/about/Rectangle 255.png" alt="r255"></div>
-            <div class="s1i2"><img src="./images/about/Rectangle 267.png" alt="r267"></div>
-        </div>
-    </div>
-    <!-- 섹션 1 -->
-
-    <div id="section2">
-        <div class="section2_1">
-            <h1>PHILOSOPHY</h1>
-            <p>관심의 시선으로 <br><br> 더 나은 일상을 제안합니다.</p>
-            <div class="s2i1"><img src="./images/about/Rectangle 266.png" alt="r266"></div>
-            <div class="s2i2"><img src="./images/about/Ellipse 9.png" alt="e9"></div>
-            <div class="s2i3"><img src="./images/about/Rectangle 256.png" alt="r256"></div>
-        </div>
-    </div>
-    <!-- 섹션 2 -->
-
-    <div id="section3">
-        <div class="section3_1">
-            <h1>HISTORY</h1>
-            <div class="s3i1"><img src="./images/about/Rectangle 266.png" alt="r266"></div>
-            <div class="s3i2"><img src="./images/about/1990.05.png" alt="1990"></div>
-            <div class="s3i3"><img src="./images/about/Rectangle 274.png" alt="r274"></div>
-            <div class="s3i4"><img src="./images/about/POCIT의 시작.png" alt="시작"></div>
-            <div class="s3i5"><img src="./images/about/Rectangle 310.png" alt="r310"></div>
-            <div class="s3i6"><img src="./images/about/1995.09.png" alt="1995"></div>
-            <div class="s3i7"><img src="./images/about/Rectangle 274.png" alt="r274"></div>
-            <div class="s3i8"><img src="./images/about/건물 완공 잡화점으로 규모 상승 예술 분야 모집 시작 (1).png" alt="aa"></div>
-            <div class="s3i9"><img src="./images/about/Rectangle 313.png" alt="r313"></div>
-            <div class="s3i10"><img src="./images/about/1999.08.png" alt="1999"></div>
-            <div class="s3i11"><img src="./images/about/Rectangle 274.png" alt="r274"></div>
-            <div class="s3i12"><img src="./images/about/Rectangle 314.png" alt="r314"></div>
-            <div class="s3i13"><img
-                    src="./images/about/세기말, 잡화점의 이미지를 탈피하기 시작하고 예술 전시가 활성화되면서 공연으로 스펙트럼이 넓어지기 시작 (1).png" alt="aaa">
-            </div>
-        </div>
-    </div>
-    <!-- 섹션 3 -->
-
-    <div id="section4">
-        <div class="section4_1">
-            <div class="s4i1"><img src="./images/about/하단/2004.02.png" alt="2004"></div>
-            <div class="s4i2"><img src="./images/about/하단/Rectangle 280.png" alt="r280"></div>
-            <div class="s4i3"><img src="./images/about/하단/전시장, 라이브 공연장 굿즈샵 입점이 많아지면서 규모를 더 키우기 위해 리모델링.png" alt="aa">
-            </div>
-            <div class="s4i4"><img src="./images/about/하단/Rectangle 315.png" alt="r315"></div>
-            <div class="s4i5"><img src="./images/about/하단/2010.05.png" alt="2010"></div>
-            <div class="s4i6"><img src="./images/about/하단/Rectangle 280.png" alt="r280"></div>
-            <div class="s4i7"><img src="./images/about/하단/첫 참여형 전시에 도전 성공적인 성과.png" alt="aa"></div>
-            <div class="s4i8"><img src="./images/about/하단/Rectangle 317.png" alt="r317"></div>
-            <div class="s4i9"><img src="./images/about/하단/2017 .12.png" alt="aa"></div>
-            <div class="s4i10"><img src="./images/about/하단/Rectangle 280.png" alt="r280"></div>
-            <div class="s4i11"><img
-                    src="./images/about/하단/부산에서 가장 큰 사건 중 하나 롯데 자이언츠의 가을야구 진출 이 사건으로 부산이 활기를 띄며 자이언츠 선수들의 방문도 이어짐.png"
-                    alt="aa"></div>
-            <div class="s4i12"><img src="./images/about/하단/Rectangle 319.png" alt="r319"></div>
-            <div class="s4i13"><img src="./images/about/하단/2026.08.png" alt="2026"></div>
-            <div class="s4i14"><img src="./images/about/하단/Rectangle 280.png" alt="r280"></div>
-            <div class="s4i15"><img src="./images/about/하단/해외유명가수 및 밴드, 국내 가수들의 홍보 및 마케팅으로 인한 활기로 하루 입장수 30000명 돌파.png"
-                    alt="aa"></div>
-            <div class="s4i16"><img src="./images/about/하단/Rectangle 321.png" alt="r321"></div>
-        </div>
-    </div>
-    <!-- 섹션 4 -->
-
-    <div id="section5">
-        <div class="section5_1">
-            <h1 class="s5t4">SPACE</h1>
-            <div class="s5i1"><img src="./images/about/Rectangle 266.png" alt="r266"></div>
-            <p class="s5t3">포시트가 제안하는 <br><br>
-                영감의 공간 소개
-            </p>
-            <div class="s5i2"><!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide text_re">
-                            <a href="#">
-                                <div class="text bg1">
-                                    <h1>GALLARY</h1>
-                                    <p>조용한 구조 안에서 감각은 더 선명해집니다.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide text_re">
-                            <a href="#">
-                                <div class="text bg2">
-                                    <h1>EXHIBITION HALL</h1>
-                                    <p>포시트는 장면을 전시하지 않습니다. 감정을 전시합니다.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <a href="#">
-                            <div class="swiper-slide text_re">
-                                <div class="text bg3">
-                                    <h1>LOUNGE</h1>
-                                    <p>빛과 침묵, 구조와 여백 사이에서 공간은 하나의 경험이 됩니다.</p>
-                                </div>
-                        </a>
-                    </div>
-                    <a href="#">
-                        <div class="swiper-slide text_re">
-                            <div class="text bg4">
-                                <h1>SHOWROOM</h1>
-                                <p>머무는 순간, 일상의 속도가 잠시 느려집니다.</p>
-                            </div>
-                    </a>
-                </div>
-                <a href="#">
-                    <div class="swiper-slide text_re">
-                        <div class="text bg5">
-                            <h1>CAFE</h1>
-                            <p>익숙한 구조 안에 낯선 감정을 담아내는 공간</p>
-                        </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-        <div class="autoplay-progress"></div>
-    </div>
-    </div>
-    <p class="s5t1">GALLARY</p>
-    <p class="s5t2">조용한 구조 안에서 감각은 더 선명해집니다.</p>
-    </div>
-    </div>
-    <!-- 섹션 5 -->
-
-    <div id="section6">
-        <div class="section6_1">
-            <h1 class="s6t1">CONTECT</h1>
-            <div class="s6i1"><img src="./images/about/Rectangle 266.png" alt="r266"></div>
-            <div class="map"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26094.159397166466!2d129.16317050557575!3d35.162358306554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688d274cdcc019%3A0x7db1edcb573ce2a2!2z7LKt7IKs7Y-s!5e0!3m2!1sko!2skr!4v1779172995631!5m2!1sko!2skr"
-                    width="1100" height="750" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-        </div>
-    </div>
-    <!-- 섹션 6 -->
-
-    <div id="section8">
-        <div class="section8_1">
-            <ul class="section8_1_1 SMN_effect-30">
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./culture.html">CULTURE</a></li>
-                <li><a href="./exhibition.html">EXHIBITION</a></li>
-                <li><a href="./shop.html">SHOP</a></li>
-            </ul>
-            <div class="section_1_2">
-                <p>@ pocit all rights reserved</p>
-            </div>
-
-            <div class="s8i1"><img src="./images/home/P O C I T TIME, MADE VISIBLE.png" alt="pocit"></div>
-            <div class="s8i2"><img src="./images/home/Vector 16.png" alt="v16"></div>
-            <a href="#">
-                <div class="s8i3">TOP</div>
-                <div class="s8i3co"></div>
-            </a>
-        </div>
-    </div>
-    <!-- 섹션 8 -->
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-
-    <script>
-        const progressCircle = document.querySelector(".autoplay-progress svg");
-        const progressContent = document.querySelector(".autoplay-progress span");
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev"
-            },
-            on: {
-                autoplayTimeLeft(s, time, progress) {
-                    progressCircle.style.setProperty("--progress", 1 - progress);
-                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-                }
-            }
-        });
-    </script>
-    <!-- Initialize Swiper -->
-</body>
-
->>>>>>> cf9e4bfba7c1398ebc8c7a3a48fbfac5f63dcf4f
-</html>
