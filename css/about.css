@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 @font-face {
@@ -671,4 +672,679 @@ body {
 .SMN_effect-30 a:hover:before, .SMN_effect-30 a:hover:after {
   width: 100%;
   background: #fff;
+=======
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'YUniverse';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-L.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUniverse';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_yuniverse@1.0/YUniverse-B.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'YUniverse', sans-serif !important;
+    font-weight: 300;
+}
+
+#section1 {
+    margin: 0 auto;
+    background: url(../images/about/Rectangle\ 244.png) no-repeat center;
+}
+
+.logomenu {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logomenu img {
+    width: 50%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section111 {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blackbox {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    padding: 90px 80px;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.s1t1 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+.s1t2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.s1i2 {
+    position: absolute;
+    top: 23%;
+    left: 42%;
+}
+
+.s1i1 {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+#section2 {
+    height: 1000px;
+    margin: 0 auto;
+    background: url(../images/about/Rectangle\ 248.png) no-repeat center;
+}
+
+.section2_1 {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section2_1 h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.section2_1 p {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 270px;
+}
+
+.s2i1 {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.s2i2 {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+
+.s2i3 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+}
+
+#section3 {
+    height: 600px;
+    background-color: rgba(223, 223, 223, 1);
+}
+
+.section3_1 {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section3_1 h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+
+.s3i1 {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+
+.s3i2 {
+    position: absolute;
+    bottom: 25%;
+    left: 0%;
+}
+
+.s3i3 {
+    position: absolute;
+    bottom: 0%;
+    left: 3%;
+}
+
+.s3i4 {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.s3i5 {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+}
+
+.s3i6 {
+    position: absolute;
+    bottom: 25%;
+    left: 45%;
+}
+
+.s3i7 {
+    position: absolute;
+    bottom: 0%;
+    left: 48%;
+}
+
+.s3i8 {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+}
+
+.s3i9 {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+}
+
+.s3i10 {
+    position: absolute;
+    bottom: 25%;
+    left: 90%;
+}
+
+.s3i11 {
+    position: absolute;
+    bottom: 0%;
+    left: 93%;
+}
+
+.s3i12 {
+    position: absolute;
+    bottom: 25%;
+    left: 95%;
+}
+
+.s3i13 {
+    position: absolute;
+    bottom: 12%;
+    left: 95%;
+}
+
+#section4 {
+    height: 400px;
+    background-color: rgba(74, 74, 74, 1);
+}
+
+.section4_1 {
+    width: 1200px;
+    height: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+}
+
+.s4i1 {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+
+.s4i2 {
+    position: absolute;
+    top: 0%;
+    left: 3%;
+}
+
+.s4i3 {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.s4i4 {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+}
+
+.s4i5 {
+    position: absolute;
+    top: 35%;
+    left: 28%;
+}
+
+.s4i6 {
+    position: absolute;
+    top: 0%;
+    left: 31%;
+}
+
+.s4i7 {
+    position: absolute;
+    top: 15%;
+    left: 33%;
+}
+
+.s4i8 {
+    position: absolute;
+    top: 38%;
+    left: 33%;
+}
+
+.s4i9 {
+    position: absolute;
+    top: 35%;
+    left: 56%;
+}
+
+.s4i10 {
+    position: absolute;
+    top: 0%;
+    left: 59%;
+}
+
+.s4i11 {
+    position: absolute;
+    top: 15%;
+    left: 61%;
+}
+
+.s4i12 {
+    position: absolute;
+    top: 38%;
+    left: 61%;
+}
+
+.s4i13 {
+    position: absolute;
+    top: 35%;
+    left: 84%;
+}
+
+.s4i14 {
+    position: absolute;
+    top: 0%;
+    left: 87%;
+}
+
+.s4i15 {
+    position: absolute;
+    top: 15%;
+    left: 89%;
+}
+
+.s4i16 {
+    position: absolute;
+    top: 38%;
+    left: 89%;
+}
+
+#section5 {
+    height: 1000px;
+    background: url(../images/about/space/Rectangle\ 250.png) no-repeat center;
+}
+
+.section5_1 {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 150px;
+    position: relative;
+}
+
+.s5t4 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.s5t3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 250px;
+}
+
+.s5i1 {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+
+.s5i2 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+.s5t1 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.s5t2 {
+    position: absolute;
+    bottom: 6%;
+    right: 5%;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#section6 {
+    background-color: rgba(154, 154, 154, 1);
+    height: 1000px;
+}
+
+.section6_1 {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-top: 110px;
+    position: relative;
+}
+
+.s6t1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.s6i1 {
+    position: absolute;
+    top: 17%;
+    left: 25%;
+}
+
+.map {
+    padding-top: 52px;
+}
+
+#section8 {
+    height: 310px;
+
+    box-sizing: border-box;
+    padding-top: 50px;
+    background-color: rgba(222, 216, 215, 1)
+}
+
+.section8_1 {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section8_1_1 {
+    display: flex;
+    float: right;
+}
+
+.section8_1_1 li {
+    padding-left: 100px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section_1_2 {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 180px;
+    padding-left: 1010px;
+}
+
+.s8i1 {
+    position: absolute;
+    top: 25%;
+    left: 0%;
+}
+
+.s8i2 {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+
+.s8i3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0)
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-pagination-bullet {
+    background: rgb(255, 255, 255);
+}
+
+.swiper-button-prev {
+    color: rgb(255, 255, 255);
+}
+
+.swiper-button-next {
+    color: white;
+}
+
+.s5i2 {
+    width: 890px;
+    height: 720px;
+    box-sizing: border-box;
+}
+
+.text_re {
+    position: relative;
+    width: 890px;
+    height: 720px;
+}
+
+.text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: right;
+    padding: 600px 150px 0px 0px;
+
+}
+
+.text h1,
+.text p {
+    margin-right: 50px;
+}
+
+.bg1 {
+    width: 100%;
+    height: 100%;
+    background: url(../images/about/space/Rectangle\ 268.png) no-repeat;
+}
+
+.bg2 {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: url(../images/about/Rectangle\ 322.png) no-repeat;
+}
+
+.bg3 {
+    width: 100%;
+    height: 100%;
+    background: url(../images/about/Rectangle\ 323.png) no-repeat;
+}
+
+.bg4 {
+    width: 100%;
+    height: 100%;
+    background: url(../images/about/Rectangle\ 324\ .png) no-repeat;
+}
+
+.bg5 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    background: url(../images/about/Rectangle\ 325\ .png) no-repeat;
+}
+.s8i3co{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(119, 119, 119);
+    display: none;
+}
+.section8_1 a:hover .s8i3co{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    opacity: 50%;
+}
+.menu a {
+  font-weight: 700;
+  padding: 15px 0px;
+  /**/
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.SMN_effect-30 a:before, .SMN_effect-30 a:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.SMN_effect-30 a:before {
+  right: 0;
+  top: 0;
+}
+
+.SMN_effect-30 a:after {
+  left: 0;
+  bottom: 0;
+}
+
+.SMN_effect-30 a:hover:before, .SMN_effect-30 a:hover:after {
+  width: 100%;
+  background: #fff;
+>>>>>>> cf9e4bfba7c1398ebc8c7a3a48fbfac5f63dcf4f
 }
